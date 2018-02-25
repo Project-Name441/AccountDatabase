@@ -50,6 +50,7 @@ bool AccountDatabase::createNewAccount()
                 QString userEnteredString;
                 QTextStream out(&file);
                 out << userEnteredString;
+                file.close();
             }
             return true;
         }
